@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  XJItemSelectAlert
+//
+//  Created by mac on 2019/11/22.
+//  Copyright © 2019 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "GlobalHeader.h"
+
+#define SCREEN_Hight ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_Width ([UIScreen mainScreen].bounds.size.width)
+#define FontSize [UIFont systemFontOfSize:14]
+#define Font_SizeFloat 14
+#define EdgeInsets (UIEdgeInsetsMake(10, 10, 10, 10))
+#define NavBarColor [UIColor colorWithRed:0.361 green:0.741 blue:0.133 alpha:1.000]
+#define YMColor(R,G,B) [UIColor colorWithRed:(R/255.00) green:(G/255.00) blue:(B/255.00) alpha:1.0]
+#define ScaleH(h) (([UIScreen mainScreen].bounds.size.width/1080.0)*h)
+
+#define kHScale(h) (([UIScreen mainScreen].bounds.size.height/667)*h)
+
+#define kKuanXiShu [UIScreen mainScreen].bounds.size.width/375
+#define kHeightXiShu [UIScreen mainScreen].bounds.size.height/667
+
+
+#define UIColorFromHexA(hexValue, a)     [UIColor colorWithRed:(((hexValue & 0xFF0000) >> 16))/255.0f green:(((hexValue & 0xFF00) >> 8))/255.0f blue:((hexValue & 0xFF))/255.0f alpha:a]
+#define UIColorFromHex(hexValue)        UIColorFromHexA(hexValue, 1.0f)
+
+
+// 导航标题、重要文字 #323232 50,50,50
+#define TitleImportantColor [UIColor colorWithRed:0.196 green:0.196 blue:0.196 alpha:1.000]
+// 一般标题、一般文字 #646464 100,100,100
+#define TitleNormalColor [UIColor colorWithRed:0.392 green:0.392 blue:0.392 alpha:1.000]
+//不重要叙述内容 #969696 150,150,150
+#define TitleContentColor [UIColor colorWithRed:0.588 green:0.588 blue:0.588 alpha:1.000]
+//分割线 #d7d7d7 215,215,215
+#define LineColor [UIColor colorWithRed:0.843 green:0.843 blue:0.843 alpha:1.000]
+//输入框、按钮灰色描边 #c7c7c7 199,199,199
+#define BtnFindEdgesColor [UIColor colorWithRed:0.780 green:0.780 blue:0.780 alpha:1.000]
+
+
+
+#define FontSize42 [UIFont systemFontOfSize:ScaleH(42)]
+#define Font_Size42 ScaleH(42)
+#define FontSize54 [UIFont systemFontOfSize:ScaleH(54)]
+#define Font_Size54 ScaleH(54)
+
+#endif /* PrefixHeader_pch */
